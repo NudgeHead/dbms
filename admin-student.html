@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>admin_student</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet">
+  <script>
+	$(function(){
+	$("#navbar").load("navbar.html");
+	$("#footer").load("footer.html");
+	});
+	
+</script>
+</head>
+<body>
+<!--navbar-->
+
+<div id="navbar"></div>
+
+<br><br><br><br>
+<div class="container">
+	<image src="..\Images\student.png" class="float-right" width="410" height="370">
+	<!-- Nav tabs -->
+  <div class="col-sm-10">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#disp_student">Display Student</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#add_student" >Add Student</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#edit_student" >Edit Student</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#delete_student" >Delete Student</a>
+    </li>
+  </ul>
+  </div>
+ 
+  <!--display student tab-->
+  <div class="tab-content">
+    <div id="disp_student" class="container tab-pane active "><br>
+    
+	   <div class="form-group">
+      <label for="sel1">Courses (select one):</label>
+      <select class="form-control col-sm-2" id="sel1" name="sellist1">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+	  <br>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	  </div>
+	  
+	  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Student id</th>
+        <th>Name</th>
+        <th>Phone no.</th>
+		<th>Course</th>
+		<th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--td></td-->
+      </tr>
+      <tr>
+        <!--td></td-->
+      </tr>
+      <tr>
+        <!--td></td-->
+      </tr>
+	   <tr>
+        <!--td></td-->
+      </tr>
+	   <tr>
+        <!--td></td-->
+      </tr>
+    </tbody>
+  </table>
+      </div>
+    
+	
+	<!--add student tab-->
+    <div id="add_student" class="container tab-pane"><br>
+      <div align="centre">
+	   <form>
+        <div class="form-group">
+		<label for="s_id">Student id:</label>
+		<input type="email" class="form-control col-sm-3" id="s_id">
+		</div>
+  
+		<div class="form-group">
+		<label for="name">Name:</label>
+		<input type="password" class="form-control col-sm-3" id="name">
+		</div>
+		
+		<div class="form-group">
+		<label for="pno">Phone No.:</label>
+		<input type="password" class="form-control col-sm-3" id="pno">
+		</div>
+		
+		<div class="form-group">
+      <label for="sel2">Courses (select one):</label>
+      <select class="form-control col-sm-2" id="sel2" name="sellist2">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+	  <br>
+	  
+	  </div>
+		
+		<div class="form-group">
+		<label for="add">Address:</label>
+		<textarea class="form-control col-sm-5" rows="5" id="add"></textarea>
+		</div>
+  
+		<button type="submit" class="btn btn-primary">Submit</button>
+	 </form>
+     </div>
+    </div>
+ 
+	<!--edit student tab-->
+	 <div id="edit_student" class="container tab-pane"><br>
+    
+	  <form class="form-inline">
+	  <div class="form-group">
+      <label for="sel3">Student_id (select one):</label>
+      <select class="form-control col-sm-2" id="sel3" name="sellist3">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+	 </div>
+	 
+	 <div class="form-group">
+	   <label for="sel4">Courses (select one):</label>
+      <select class="form-control col-sm-2" id="sel4" name="sellist4">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+	   </div>
+	  </form>
+	 
+	   <form>
+       <div class="form-group">
+		<label for="ename">Name:</label>
+		<input type="password" class="form-control col-sm-3" id="ename">
+		</div>
+		
+		<div class="form-group">
+		<label for="epno">Phone No.:</label>
+		<input type="password" class="form-control col-sm-3" id="epno">
+		</div>
+		
+		
+		
+		<div class="form-group">
+		<label for="eadd">Address:</label>
+		<textarea class="form-control col-sm-5" rows="5" id="eadd"></textarea>
+		</div>
+  
+		<button type="submit" class="btn btn-primary">Submit</button>
+	 </form>
+	 </div>
+	  
+     <!--delete student tab-->
+  
+    <div id="delete_student" class="container tab-pane  "><br>
+       <form>
+	   <div class="form-group">
+      <label for="sel5">Student id (select one):</label>
+      <select class="form-control col-sm-2" id="sel5" name="sellist5">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+	  </div>
+	  
+	   <div class="form-group">
+      <label for="sel6">Courses (select one):</label>
+      <select class="form-control col-sm-2" id="sel6" name="sellist6">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+	  </div>
+	  </form>
+	  <br><br>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	  
+      </div>
+ </div>
+
+</div>
+<br><br><br>
+<!--footer-->
+<div id="footer"></div>
+</body>
+</html>

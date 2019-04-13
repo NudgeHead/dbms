@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>admin_subject</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet">
+  <script>
+	$(function(){
+	$("#navbar").load("navbar.html");
+	$("#footer").load("footer.html");
+	});
+	
+</script>
+</head>
+<body>
+<!--navbar-->
+<div id="navbar"></div>
+
+
+<br><br><br><br>
+<div class="container">
+<image src="..\Images\subject.png" class="float-right" width="500" height="345">
+
+	<!-- Nav tabs -->
+  <div class="col-sm-10">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#disp_subject">Display Subject</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#add_subject" >Add Subject</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#edit_subject" >Edit Subject</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#delete_subject" >Delete Subject</a>
+    </li>
+  </ul>
+  </div>
+
+  <!--display subject tab-->
+  <div class="tab-content">
+    <div id="disp_subject" class="container tab-pane active "><br>
+
+	   <div class="form-group">
+      <label for="sel1">Subject id:</label>
+      <select class="form-control col-sm-2" id="sel1" name="sellist1">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+
+
+      <div class="form-group">
+       <label for="sel6">Courses id (select one):</label>
+       <select class="form-control col-sm-2" id="sel6" name="sellist6">
+         <!--option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option-->
+       </select>
+ 	  </div>
+	  <br>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	  </div>
+      </div>
+
+
+
+
+	<!--add subject tab-->
+    <div id="add_subject" class="container tab-pane"><br>
+      <div align="centre">
+	   <form>
+        <div class="form-group">
+		<label for="id">Subject id:</label>
+		<input type="email" class="form-control col-sm-3" id="id">
+		</div>
+
+    <div class="form-group">
+      <label for="sel2">Course id(select one):</label>
+      <select class="form-control col-sm-2" id="sel2" name="sellist2">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+
+		<div class="form-group">
+		<label for="name">Subject Name:</label>
+		<input type="email" class="form-control col-sm-3" id="name">
+		</div>
+
+    <div class="form-group">
+		<label for="credit">Credit:</label>
+		<input type="number" class="form-control col-sm-3" id="credit">
+		</div>
+
+	  <br>
+
+	  </div>
+
+		<button type="submit" class="btn btn-primary">Submit</button>
+	 </form>
+     </div>
+    </div>
+
+	<!--edit subject tab-->
+	 <div id="edit_subject" class="container tab-pane"><br>
+
+	  <form class="form-inline">
+	  <div class="form-group">
+      <label for="sel3">Student id (select one):</label>
+      <select class="form-control col-sm-2" id="sel3" name="sellist3">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+	 </div>
+
+	 <div class="form-group">
+	   <label for="sel4">Course id (select one):</label>
+      <select class="form-control col-sm-2" id="sel4" name="sellist4">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+	   </div>
+	  </form>
+
+	   <form>
+       <div class="form-group">
+		<label for="name">Subject Name:</label>
+		<input type="email" class="form-control col-sm-3" id="name">
+		</div>
+
+		<div class="form-group">
+		<label for="credit">Credit:</label>
+		<input type="number" class="form-control col-sm-3" id="credit">
+		</div>
+
+		<button type="submit" class="btn btn-primary">Submit</button>
+	 </form>
+	 </div>
+
+     <!--delete subject tab-->
+
+    <div id="delete_subject" class="container tab-pane  "><br>
+       <form>
+	   <div class="form-group">
+      <label for="sel5">Subject id (select one):</label>
+      <select class="form-control col-sm-2" id="sel5" name="sellist5">
+        <!--option>1</option>s
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+	  </div>
+
+	   <div class="form-group">
+      <label for="sel6">Courses (select one):</label>
+      <select class="form-control col-sm-2" id="sel6" name="sellist6">
+        <!--option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option-->
+      </select>
+	  </div>
+	  </form>
+	  <br><br>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+
+      </div>
+ </div>
+
+</div>
+<br><br><br>
+<!--footer-->
+<div id="footer"></div>
+</body>
+</html>
